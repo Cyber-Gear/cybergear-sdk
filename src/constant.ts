@@ -27,10 +27,12 @@ export function contract(env?: string) {
   const environment = env || process.env.NODE_ENV;
   if (environment === 'production') {
     return {
+      Market: '0x',
       JoeRouter: '0x60aE616a2155Ee3d9A68541Ba4544862310933d4',
     };
   } else {
     return {
+      Market: '0x',
       JoeRouter: '0x',
     };
   }
