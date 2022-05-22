@@ -1,0 +1,31 @@
+{
+  "name": "isekai-sdk",
+  "version": "1.0.2",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isekaifans/isekai-sdk.git"
+  },
+  "author": "ISEKAI-TEAM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isekaifans/isekai-sdk/issues"
+  },
+  "homepage": "https://github.com/isekaifans/isekai-sdk#readme",
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@walletconnect/web3-provider": "^1.7.5",
+    "ethers": "^5.6.1",
+    "graphql": "^16.3.0",
+    "isekai-core": "^1.0.2"
+  },
+  "devDependencies": {
+    "tsdx": "^0.14.1"
+  }
+}
