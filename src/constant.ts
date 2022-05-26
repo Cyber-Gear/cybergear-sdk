@@ -5,8 +5,8 @@ export function token(env?: string) {
       CB: '0x',
       CN: '0x',
       CS: '0x',
-      KAI: '0x',
-      KAILP: '0x',
+      FUN: '0x',
+      FUNLP: '0x',
       USDC: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
       WAVAX: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     }
@@ -15,8 +15,8 @@ export function token(env?: string) {
       CB: '0x',
       CN: '0x',
       CS: '0x',
-      KAI: '0x',
-      KAILP: '0x',
+      FUN: '0x',
+      FUNLP: '0x',
       USDC: '0x',
       WAVAX: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
     };

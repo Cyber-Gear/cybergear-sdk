@@ -48,14 +48,14 @@ export const wallet = {
     });
   },
 
-  addKAI: async (img: string) => {
+  addFUN: async (img: string) => {
     return await web3Provider.request({
       method: 'wallet_watchAsset',
       params: {
         type: 'ERC20',
         options: {
-          address: token().KAI,
-          symbol: 'KAI',
+          address: token().FUN,
+          symbol: 'FUN',
           decimals: 18,
           image: img,
         },
