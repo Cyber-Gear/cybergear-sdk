@@ -4,7 +4,7 @@ import { rpcProvider } from '../utils';
 import { contract } from '../constant';
 
 const client = new ApolloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/funtopia/market',
+  uri: 'https://api.thegraph.com/subgraphs/name/fun-topia/market',
   cache: new InMemoryCache(),
 })
 
