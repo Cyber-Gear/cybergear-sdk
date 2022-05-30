@@ -20,10 +20,11 @@
   "homepage": "https://github.com/fun-topia/funtopia-sdk#readme",
   "dependencies": {
     "@apollo/client": "^3.5.10",
+    "@snapshot-labs/snapshot.js": "^0.3.87",
     "@walletconnect/web3-provider": "^1.7.5",
     "ethers": "^5.6.1",
-    "graphql": "^16.3.0",
-    "funtopia-core": "^1.0.4"
+    "funtopia-core": "^1.0.4",
+    "graphql": "^16.3.0"
   },
   "devDependencies": {
     "tsdx": "^0.14.1"
