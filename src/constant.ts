@@ -12,10 +12,10 @@ export function token(env?: string) {
     }
   } else {
     return {
-      CB: '0x',
-      CN: '0x',
-      CS: '0x',
-      FUN: '0x',
+      CB: '0x32c09806C0d1064b74700c98B3DEE73d41f48Edf',
+      CN: '0x8FeB8ad9282b22fEE33F5da25f4aCAFe4BFAA925',
+      CS: '0x7E47837BBCB61D9675C66e6e64c6b307E5687F3A',
+      FUN: '0x18b2978D7E4EAc4A00c66Ab00d68bA7E77141A79',
       FUNLP: '0x',
       USDC: '0x',
       WAVAX: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
@@ -32,7 +32,7 @@ export function contract(env?: string) {
     };
   } else {
     return {
-      Market: '0x',
+      Market: '0xFfc78d708c478a75f1a0d0cd6889940eC141A51f',
       JoeRouter: '0x',
     };
   }
