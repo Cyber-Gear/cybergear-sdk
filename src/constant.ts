@@ -12,7 +12,7 @@ export function token(env?: string) {
     }
   } else {
     return {
-      CB: '0x32c09806C0d1064b74700c98B3DEE73d41f48Edf',
+      CB: '0x85878b61c20C145b470a162094FD4ad21f0B1267',
       CN: '0x8FeB8ad9282b22fEE33F5da25f4aCAFe4BFAA925',
       CS: '0x7E47837BBCB61D9675C66e6e64c6b307E5687F3A',
       FUN: '0x18b2978D7E4EAc4A00c66Ab00d68bA7E77141A79',
