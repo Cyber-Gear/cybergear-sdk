@@ -87,16 +87,7 @@ export const vote = {
     `;
 
     return await client.query({
-      query: gql(proposalsQuery),
-      variables: {
-        first: first,
-        skip: skip,
-        orderBy: orderBy,
-        orderDirection: orderDirection,
-        state: state,
-        author: author,
-        author_not: author_not,
-      },
+      query: gql(proposalsQuery)
     });
   },
 
@@ -125,14 +116,7 @@ export const vote = {
     `;
 
     return await client.query({
-      query: gql(votesQuery),
-      variables: {
-        first: first,
-        skip: skip,
-        orderBy: orderBy,
-        orderDirection: orderDirection,
-        proposal: proposal,
-      },
+      query: gql(votesQuery)
     });
   },
 
