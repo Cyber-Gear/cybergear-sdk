@@ -50,10 +50,10 @@ export const vote = {
     author_not?: string,
   ) => {
     const proposalsQuery = `
-      query($first: Int, $skip: Int, $orderBy: BigInt, $orderDirection: String, $state: String, $author: String, $author_not: String) {
+      query {
         proposals(
-          first: $first, skip: $skip, orderBy: $orderBy, orderDirection: $orderDirection,
-          where: {space_in: ["${spaceName}"], ${state ? `state: $state,` : ``} ${author ? `author: $author,` : ``} ${author_not ? `author_not: $author_not,` : ``}}
+          first: ${first}, skip: ${skip}, orderBy: ${orderBy}, orderDirection: ${orderDirection},
+          where: {space_in: ["${spaceName}"], ${state ? `state: ${state},` : ``} ${author ? `author: ${author},` : ``} ${author_not ? `author_not: ${author_not},` : ``}}
         ) {
           id  
           ipfs  
@@ -108,10 +108,10 @@ export const vote = {
     proposal?: string,
   ) => {
     const votesQuery = `
-      query($first: Int, $skip: Int, $orderBy: BigInt, $orderDirection: String, $proposal: String) {
+      query {
         votes(
-          first: $first, skip: $skip, orderBy: $orderBy, orderDirection: $orderDirection,
-          where: {${proposal ? `proposal: $proposal,` : ``}}
+          first: ${first}, skip: ${skip}, orderBy: ${orderBy}, orderDirection: ${orderDirection},
+          where: {${proposal ? `proposal: ${proposal},` : ``}}
         ) {
           id
           ipfs
