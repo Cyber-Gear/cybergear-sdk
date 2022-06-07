@@ -5,7 +5,7 @@ export function token(env?: string) {
       CB: '0x',
       CN: '0x',
       CS: '0x',
-      FUN: '0x',
+      FUN: '0x3c1c0Bd9bFD90254916C4cb5e7221Ce907b4D4b1',
       FUNLP: '0x',
       USDC: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
       WAVAX: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
