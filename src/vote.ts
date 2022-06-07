@@ -52,8 +52,8 @@ export const vote = {
     const proposalsQuery = `
       query {
         proposals(
-          first: ${first}, skip: ${skip}, orderBy: ${orderBy}, orderDirection: ${orderDirection},
-          where: {space_in: ["${spaceName}"], ${state ? `state: ${state},` : ``} ${author ? `author: ${author},` : ``} ${author_not ? `author_not: ${author_not},` : ``}}
+          first: ${first}, skip: ${skip}, orderBy: "${orderBy}", orderDirection: ${orderDirection},
+          where: {space_in: ["${spaceName}"], ${state ? `state: "${state}",` : ``} ${author ? `author: "${author}",` : ``} ${author_not ? `author_not: "${author_not}",` : ``}}
         ) {
           id  
           ipfs  
@@ -101,8 +101,8 @@ export const vote = {
     const votesQuery = `
       query {
         votes(
-          first: ${first}, skip: ${skip}, orderBy: ${orderBy}, orderDirection: ${orderDirection},
-          where: {${proposal ? `proposal: ${proposal},` : ``}}
+          first: ${first}, skip: ${skip}, orderBy: "${orderBy}", orderDirection: ${orderDirection},
+          where: {${proposal ? `proposal: "${proposal}",` : ``}}
         ) {
           id
           ipfs
