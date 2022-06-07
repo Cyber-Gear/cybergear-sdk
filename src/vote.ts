@@ -120,7 +120,7 @@ export const vote = {
     });
   },
 
-  getScores: async (voters: string[]) => {
+  getScores: async (voters: string[], blockNumber: number) => {
     return await snapshot.utils.getScores(
       spaceName,
       [
@@ -135,7 +135,7 @@ export const vote = {
       ],
       '1',
       voters,
-      await getProvider().getBlockNumber(),
+      blockNumber,
     );
   },
 
