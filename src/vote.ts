@@ -160,7 +160,7 @@ export const vote = {
       start: start,
       end: end,
       snapshot: await getProvider().getBlockNumber(),
-      network: '1',
+      network: '43114',
       strategies: JSON.stringify([
         {
           name: 'erc20-balance-of',
