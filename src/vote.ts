@@ -45,6 +45,7 @@ export const vote = {
     skip: number,
     orderBy: string,
     orderDirection: string,
+    id?: string,
     state?: string,
     author?: string,
     author_not?: string,
@@ -53,34 +54,34 @@ export const vote = {
       query {
         proposals(
           first: ${first}, skip: ${skip}, orderBy: "${orderBy}", orderDirection: ${orderDirection},
-          where: {space_in: ["${spaceName}"], ${state ? `state: "${state}",` : ``} ${author ? `author: "${author}",` : ``} ${author_not ? `author_not: "${author_not}",` : ``}}
+          where: {space_in: ["${spaceName}"], ${id ? `id: "${id}",` : ``} ${state ? `state: "${state}",` : ``} ${author ? `author: "${author}",` : ``} ${author_not ? `author_not: "${author_not}",` : ``}}
         ) {
-          id  
-          ipfs  
-          title  
-          body  
-          choices  
-          start  
-          end  
-          snapshot  
-          state  
-          author  
-          created  
-          plugins  
-          network  
-          type  
+          id
+          ipfs
+          title
+          body
+          choices
+          start
+          end
+          snapshot
+          state
+          author
+          created
+          plugins
+          network
+          type
           strategies {
-            name    
-            params  
-          }  
-          space {    
-            id    
-            name  
-          }  
-          scores_state  
-          scores  
-          scores_by_strategy  
-          scores_total  
+            name
+            params
+          }
+          space {
+            id
+            name
+          }
+          scores_state
+          scores
+          scores_by_strategy
+          scores_total
           votes
         }
       }
