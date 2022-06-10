@@ -61,6 +61,7 @@ export const vote = {
           title
           body
           choices
+          discussion
           start
           end
           snapshot
