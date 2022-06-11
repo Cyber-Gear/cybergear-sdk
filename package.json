@@ -1,6 +1,6 @@
 {
   "name": "funtopia-sdk",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
@@ -23,7 +23,7 @@
     "@snapshot-labs/snapshot.js": "^0.3.87",
     "@walletconnect/web3-provider": "^1.7.5",
     "ethers": "^5.6.1",
-    "funtopia-core": "^1.0.4",
+    "funtopia-core": "^1.0.6",
     "graphql": "^16.3.0"
   },
   "devDependencies": {
