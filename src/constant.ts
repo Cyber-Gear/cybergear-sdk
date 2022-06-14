@@ -7,7 +7,7 @@ export function token(env?: string) {
       CS: '0x',
       FUN: '0x3c1c0Bd9bFD90254916C4cb5e7221Ce907b4D4b1',
       FUNLP: '0x',
-      USDC: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+      USDT: '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
       WAVAX: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     }
   } else {
@@ -17,7 +17,7 @@ export function token(env?: string) {
       CS: '0x7E47837BBCB61D9675C66e6e64c6b307E5687F3A',
       FUN: '0x18b2978D7E4EAc4A00c66Ab00d68bA7E77141A79',
       FUNLP: '0x',
-      USDC: '0x',
+      USDT: '0xb3e0eFcD78829B319BE3D089D88e88D6Cf092B13',
       WAVAX: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
     };
   }
