@@ -29,11 +29,15 @@ export function contract(env?: string) {
     return {
       Market: '0x',
       JoeRouter: '0x60aE616a2155Ee3d9A68541Ba4544862310933d4',
+      USDTDeposit: '0x',
+      USDTWithdraw: '0x',
     };
   } else {
     return {
       Market: '0xFfc78d708c478a75f1a0d0cd6889940eC141A51f',
       JoeRouter: '0x',
+      USDTDeposit: '0x',
+      USDTWithdraw: '0x',
     };
   }
 };
