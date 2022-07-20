@@ -43,14 +43,14 @@ export function network(env?: string) {
   if (environment === 'production') {
     return {
       chainId: '0x1',
-      chainName: 'Ethereum-Mainnet',
-      rpcUrls: ['https://mainnet.infura.io/v3/']
+      chainName: 'mainnet',
+      rpcUrls: ['https://mainnet.infura.io/v3/bf8dec918d984e83b993411ee2ab6f00']
     };
   } else {
     return {
       chainId: '0x4',
-      chainName: 'Rinkeby-Testnet',
-      rpcUrls: ['https://rinkeby.infura.io/v3/']
+      chainName: 'rinkeby',
+      rpcUrls: ['https://rinkeby.infura.io/v3/bf8dec918d984e83b993411ee2ab6f00']
     };
   }
 };
