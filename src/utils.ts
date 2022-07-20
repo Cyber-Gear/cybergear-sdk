@@ -20,7 +20,7 @@ function newWeb3Provider(walletType: string | null) {
       chainId: Number(network().chainId)
     });
   } else {
-    provider = (window as any).ethereum;
+    provider = (window as any)[walletType && walletType != 'metamask' ? walletType : 'ethereum'];
   }
 
   return provider;
