@@ -88,6 +88,6 @@ export function getSigner() {
   return new ethers.providers.Web3Provider(web3Provider).getSigner();
 }
 
-export function getRandomNumber(snId: number, slot: string, base: number, range: number) {
-  return BigNumber.from(utils.solidityKeccak256(['uint256', 'string'], [snId, slot])).mod(range).add(base).toNumber();
+export function getRandomNumber(cnId: number, slot: string, base: number, range: number) {
+  return BigNumber.from(utils.solidityKeccak256(['uint256', 'string'], [cnId, slot])).mod(range).add(base).toNumber();
 }
