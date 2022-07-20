@@ -43,8 +43,8 @@ export const wallet = {
 
   addChain: async () => {
     return await web3Provider.request({
-      method: 'wallet_addEthereumChain',
-      params: [network()]
+      method: 'wallet_switchEthereumChain',
+      params: [{ chainId: network().chainId }]
     });
   },
 
