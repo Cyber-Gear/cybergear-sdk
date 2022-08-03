@@ -135,7 +135,7 @@ export const vote = {
           }
         }
       ],
-      '43114',
+      '1',
       voters,
       blockNumber,
     );
@@ -162,7 +162,7 @@ export const vote = {
       start: start,
       end: end,
       snapshot: await getProvider().getBlockNumber(),
-      network: '43114',
+      network: '1',
       strategies: JSON.stringify([
         {
           name: 'erc20-balance-of',
